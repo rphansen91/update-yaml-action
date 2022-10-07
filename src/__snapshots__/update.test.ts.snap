@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Update YAML Should set nested array field 1`] = `
+"deployments:
+  - name: api-coin-manager-apollo
+    image:
+      repository: gcr.io/xyo-network-1522800011804/api-coin-manager-apollo
+      tag: "123"
+    env:
+      - name: BASE
+        value: /manager
+"
+`;

@@ -1,0 +1,32 @@
+name: Update YAML Action
+author: Ryan P. Hansen
+description: Tool to update yaml files from github action
+inputs:
+  repo:
+    description: 'The location of the repo'
+    required: true
+  ref:
+    description: 'The branch to commit changes'
+    required: true
+  msg:
+    description: 'The commit message to add with commit'
+    required: true
+  valueFile:
+    description: 'The path to file under change'
+    required: true
+  propertyPath:
+    description: 'The json'
+    required: true
+  value:
+    description: ''
+    required: true
+  token:
+    default: ''
+    description: 'The gihub personal access token used to write commit'
+    required: false
+outputs:
+  ref: 
+    description: 'The updated commit ref of target repo'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
