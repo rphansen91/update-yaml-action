@@ -1,6 +1,9 @@
 name: Update YAML Action
 author: Ryan P. Hansen
 description: Tool to update yaml files from github action
+brand:
+  color: pink
+  icon: anchor
 inputs:
   repo:
     description: 'The location of the repo'
