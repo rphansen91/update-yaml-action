@@ -34,7 +34,7 @@ The new head commit ref.
 ## Example usage
 
 ```yaml
-uses: rphansen91/update-yaml-action@v1.4
+uses: rphansen91/update-yaml-action@v1.5
 with:
   repo: xylabs/coin-k8s-services
   ref: main
