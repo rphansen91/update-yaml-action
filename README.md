@@ -36,11 +36,11 @@ The new head commit ref.
 ```yaml
 uses: actions/update-yaml-action@v1.0
 with:
-	repo: xylabs/coin-k8s-services
-	ref: main
-	msg: "Update Image Version to ${{ github.sha }}"
+  repo: xylabs/coin-k8s-services
+  ref: main
+  msg: "Update Image Version to ${{ github.sha }}"
   valueFile: "coin/values.yaml"
-	propertyPath: "$.deployments[?(@.name=='api-coin-manager-apollo')].image.tag"
-	value: ${{ github.sha }}
-	token: ${{ secrets.K8S_HELM_TOKEN }}
+  propertyPath: "$.deployments[?(@.name=='api-coin-manager-apollo')].image.tag"
+  value: ${{ github.sha }}
+  token: ${{ secrets.K8S_HELM_TOKEN }}
 ```
